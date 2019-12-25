@@ -1,4 +1,5 @@
 import React from 'react'
+import Divider from '../Divider/Divider'
 
 const Header = () => {
     return (
@@ -9,13 +10,7 @@ const Header = () => {
             {/* Masthead Heading */}
             <h1 className="masthead-heading text-uppercase mb-0">Ignacio Iacovino</h1>
             {/* Icon Divider */}
-            <div className="divider-custom divider-light">
-                <div className="divider-custom-line" />
-                <div className="divider-custom-icon">
-                <i className="fas fa-star" />
-                </div>
-                <div className="divider-custom-line" />
-            </div>
+            <Divider light />
             {/* Masthead Subheading */}
             <p className="masthead-subheading font-weight-light mb-0">
                 Junior React Developer

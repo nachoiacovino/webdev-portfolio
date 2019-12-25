@@ -8,7 +8,8 @@ import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 import Copyright from '../../components/Copyright/Copyright'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
-import PortfolioModals from '../../components/PortfolioModals/PortfolioModals'
+import PortfolioModal from '../../components/PortfolioModal/PortfolioModal'
+import portfolio from '../../portfolio'
 
 const Homepage = () => {
     return (
@@ -21,7 +22,7 @@ const Homepage = () => {
             <Footer />
             <Copyright />
             <ScrollToTop />
-            <PortfolioModals />
+            {portfolio.map(item => <PortfolioModal item={item} />)}
         </>
     )
 }

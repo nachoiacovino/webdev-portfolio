@@ -1,4 +1,5 @@
 import React from 'react'
+import Divider from '../Divider/Divider'
 
 const Contact = () => {
     return (
@@ -8,14 +9,7 @@ const Contact = () => {
             <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
                 Contact Me
             </h2>
-            {/* Icon Divider */}
-            <div className="divider-custom">
-                <div className="divider-custom-line" />
-                <div className="divider-custom-icon">
-                <i className="fas fa-star" />
-                </div>
-                <div className="divider-custom-line" />
-            </div>
+            <Divider />
             {/* Contact Section Form */}
             <div className="row">
                 <div className="col-lg-8 mx-auto">

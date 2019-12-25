@@ -1,4 +1,5 @@
 import React from 'react'
+import Divider from '../Divider/Divider'
 
 const About = () => {
     return (
@@ -8,14 +9,7 @@ const About = () => {
             <h2 className="page-section-heading text-center text-uppercase text-white">
                 About
             </h2>
-            {/* Icon Divider */}
-            <div className="divider-custom divider-light">
-                <div className="divider-custom-line" />
-                <div className="divider-custom-icon">
-                <i className="fas fa-star" />
-                </div>
-                <div className="divider-custom-line" />
-            </div>
+            <Divider light />
             {/* About Section Content */}
             <div className="row">
                 <div className="col-lg-4 ml-auto">
