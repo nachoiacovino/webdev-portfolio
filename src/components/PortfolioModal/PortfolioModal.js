@@ -40,15 +40,20 @@ const PortfolioModal = ({ item }) => {
                             alt={title}
                         />
                         {/* Portfolio Modal - Text */}
-                        <p className="mb-5">
-                            {description}
-                        </p>
-                        <button
-                            className="btn btn-primary"
-                            href="#"
-                            data-dismiss="modal"
-                        >
-                        <i className="fas fa-times fa-fw" />
+                        <p className="mb-5">{description}</p>
+                        <a className="btn btn-info mr-1" href={demo} target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-globe-europe mr-1"></i>
+                            Demo
+                        </a>
+                        {github && 
+                             <a className="btn btn-dark ml-1" href={github} target="_blank" rel="noopener noreferrer">
+                             <i class="fab fa-github mr-1"></i>
+                             View on Github
+                         </a>
+                        }
+                        <br />
+                        <button className="btn btn-primary mt-2" href="#" data-dismiss="modal">
+                            <i className="fas fa-times mr-1" />
                             Close Window
                         </button>
                     </div>

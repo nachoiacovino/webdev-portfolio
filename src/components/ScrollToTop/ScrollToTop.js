@@ -7,7 +7,7 @@ const ScrollToTop = () => {
             className="js-scroll-trigger d-block text-center text-white rounded"
             href="#page-top"
             >
-            <i className="fa fa-chevron-up" />
+                <i className="fa fa-chevron-up" />
             </a>
         </div>
     )

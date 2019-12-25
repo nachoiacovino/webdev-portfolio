@@ -13,7 +13,7 @@ const Header = () => {
             <Divider light />
             {/* Masthead Subheading */}
             <p className="masthead-subheading font-weight-light mb-0">
-                Junior React Developer
+                Junior Front-End React Developer
             </p>
             </div>
         </header>

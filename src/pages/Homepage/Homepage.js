@@ -10,6 +10,8 @@ import Copyright from '../../components/Copyright/Copyright'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
 import PortfolioModal from '../../components/PortfolioModal/PortfolioModal'
 import portfolio from '../../portfolio'
+import DevCourses from '../../components/DevCourses/DevCourses'
+import Skills from '../../components/Skills/Skills'
 
 const Homepage = () => {
     return (
@@ -18,6 +20,8 @@ const Homepage = () => {
             <Header />
             <Portfolio />
             <About />
+            <DevCourses />
+            <Skills />
             <Contact />
             <Footer />
             <Copyright />
