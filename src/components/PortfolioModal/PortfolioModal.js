@@ -47,12 +47,12 @@ const PortfolioModal = ({ item }) => {
                                 <TechButtons tech={tech} />
                         </div>
                         <a className="btn btn-info mr-1" href={demo} target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-globe-europe mr-1"></i>
+                            <i className="fas fa-globe-europe mr-1"></i>
                             Demo
                         </a>
                         {github && 
                              <a className="btn btn-dark ml-1" href={github} target="_blank" rel="noopener noreferrer">
-                             <i class="fab fa-github mr-1"></i>
+                             <i className="fab fa-github mr-1"></i>
                              View on Github
                          </a>
                         }

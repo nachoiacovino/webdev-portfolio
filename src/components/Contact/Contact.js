@@ -69,41 +69,41 @@ const Contact = () => {
                 <div className="row">
                     <div className="col-lg-8 mx-auto">
                     <form onSubmit={submitForm} action="https://formspree.io/xzbdyzez" method="POST" id="contactForm" name="sentMessage">
-                            <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                <input class="form-control" id="name" name="name" value={name} onChange={setName} type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
-                                <p class="help-block text-danger"></p>
+                            <div className="row">
+                            <div className="col-md-6">
+                                <div className="form-group">
+                                <input className="form-control" id="name" name="name" value={name} onChange={setName} type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <p className="help-block text-danger"></p>
                                 </div>
-                                <div class="form-group">
-                                <input class="form-control" id="email" name="email" value={email} onChange={setEmail} type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
-                                <p class="help-block text-danger"></p>
+                                <div className="form-group">
+                                <input className="form-control" id="email" name="email" value={email} onChange={setEmail} type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
+                                <p className="help-block text-danger"></p>
                                 </div>
-                                <div class="form-group">
-                                <input class="form-control" id="phone" name="phone" value={phone} onChange={setPhone} type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
-                                <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                <textarea class="form-control" id="message" name="message" value={message} onChange={setMessage} placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
+                                <div className="form-group">
+                                <input className="form-control" id="phone" name="phone" value={phone} onChange={setPhone} type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                <p className="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
+                            <div className="col-md-6">
+                                <div className="form-group">
+                                <textarea className="form-control" id="message" name="message" value={message} onChange={setMessage} placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <p className="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div className="clearfix"></div>
+                            <div className="col-lg-12 text-center">
                                 {/* <div id="success"></div> */}
                                 
                             {status === "SUCCESS" 
-                            ?   <div class='alert alert-success'>
-                                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                            ?   <div className='alert alert-success'>
+                                    <button type='button' className='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                                     <strong>Your message has been sent. </strong>
                                 </div>
-                            :   <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                            :   <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
                             }
                             {status === "ERROR" && 
-                                <div class='alert alert-danger mt-3'>
-                                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                                <div className='alert alert-danger mt-3'>
+                                    <button type='button' className='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                                     <strong>Sorry {name}, it seems that my mail server is not responding. Please try again later!</strong>
                                 </div>
                             }

@@ -26,7 +26,7 @@ const Homepage = () => {
             <Footer />
             <Copyright />
             <ScrollToTop />
-            {portfolio.map(item => <PortfolioModal item={item} />)}
+            {portfolio.map(item => <PortfolioModal key={item.title} item={item} />)}
         </>
     )
 }

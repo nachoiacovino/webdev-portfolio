@@ -13,7 +13,7 @@ const DevCourses = () => {
                     Dev Courses
                 </h2>
                 <Divider />
-                {courses.map(course => <Course course={course} />)}
+                {courses.map(course => <Course key={course.title} course={course} />)}
             </div>
         </section>
         </>

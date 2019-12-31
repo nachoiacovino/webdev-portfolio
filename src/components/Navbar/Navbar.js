@@ -1,14 +1,25 @@
 import React from 'react'
+import './Navbar.scss'
+import $ from 'jquery';
+window.$ = $;
 
 const Navbar = () => {
     const handleNavbarClose = _ => {
         if (document.querySelector('[aria-expanded="false"]') === null) document.querySelector('.navbar-toggler-right').click()
     }
 
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault()
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500)
+    })
+
+    // TODO: Collapse Navbar when scrolling
+
     return (
-        <nav
-        className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-        id="mainNav">
+        <nav className="Navbar navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div className="container">
             <a onClick={handleNavbarClose} className="navbar-brand js-scroll-trigger" href="#page-top">
                 Ignacio Iacovino

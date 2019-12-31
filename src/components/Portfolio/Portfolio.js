@@ -14,7 +14,7 @@ const Portfolio = () => {
                 </h2>
                 <Divider />
                 <div className="row">
-                    {portfolio.map(item => <PortfolioItem item={item} />)}
+                    {portfolio.map(item => <PortfolioItem key={item.title} item={item} />)}
                 </div>
             </div>
         </section>
