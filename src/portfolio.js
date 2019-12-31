@@ -4,7 +4,7 @@ export default [
         description: "Website made for a client. He's a map creator for a videogame called Fortnite and wanted a website to showcase all his maps divided by categories. Made completely with React Hooks and SASS.",
         tech: ["React", "React Hooks", "JavaScript", "JSX", "JSON", "SASS", "Node.js"],
         demo: "https://hooshen-gg.herokuapp.com/",
-        thumbnail: "/img/portfolio/hooshen-gg-thumb.jpg",
+        thumbnail: "/img/portfolio/hooshen-gg.jpg",
         image: "/img/portfolio/hooshen-gg.jpg",
         id: "hooshen-gg",
         // github: "https://github.com/naknekv/hooshen-maps"
@@ -14,7 +14,7 @@ export default [
         description: "Practice E-Commerce website in which I used Redux for state management and Firebase for Auth, the cart is stored in Local Storage. All the CSS was done with SASS.",
         tech: ["React", "React Hooks", "Redux", "Firebase", "JavaScript", "JSX", "JSON", "SASS", "Node.js", "Local Storage"],
         demo: "https://react-e-commerce-nak.herokuapp.com/",
-        thumbnail: "/img/portfolio/e-commerce-app-thumb.jpg",
+        thumbnail: "/img/portfolio/e-commerce-app.jpg",
         image: "/img/portfolio/e-commerce-app.jpg",
         id: "e-commerce-app",
         github: "https://github.com/naknekv/react-e-commerce"
@@ -34,7 +34,7 @@ export default [
         description: "Todo App made with React and the Context API, the TODOs are saved in Local Storage. The reducer for the context use CRUD.",
         tech: ["React", "React Hooks", "Context API", "JavaScript", "JSX", "JSON", "Material UI", "Node.js", "Local Storage"],
         demo: "https://todo-app-nak.herokuapp.com/",
-        thumbnail: "/img/portfolio/todo-app-thumb.jpg",
+        thumbnail: "/img/portfolio/todo-app.jpg",
         image: "/img/portfolio/todo-app.jpg",
         id: "todo-app",
         github: "https://github.com/naknekv/react-hooks-todo-app"
@@ -44,7 +44,7 @@ export default [
         description: "The classic game 'Yahtzee' made with React, you throw the dice and try to get a high score by combining the results.",
         tech: ["React", "JavaScript", "JSX", "CSS3", "Node.js"],
         demo: "https://yahtzee-nak.herokuapp.com/",
-        thumbnail: "/img/portfolio/yahtzee-thumb.jpg",
+        thumbnail: "/img/portfolio/yahtzee.jpg",
         image: "/img/portfolio/yahtzee.jpg",
         id: "yahtzee",
         github: "https://github.com/naknekv/react-yahtzee"
@@ -54,7 +54,7 @@ export default [
         description: "The classic game 'Lights Out' made with React. When you click on a square, it switches itself and the surrounding squares, the objective of the game is turn all of the squares off.",
         tech: ["React", "JavaScript", "JSX", "CSS3", "Node.js"],
         demo: "https://lights-out-nak.herokuapp.com/",
-        thumbnail: "img/portfolio/lights-out-thumb.jpg",
+        thumbnail: "img/portfolio/lights-out.jpg",
         image: "img/portfolio/lights-out.jpg",
         id: "lights-out",
         github: "https://github.com/naknekv/react-lights-out"
