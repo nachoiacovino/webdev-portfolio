@@ -5,7 +5,9 @@ import Course from '../Course/Course'
 
 const DevCourses = () => {
     return (
-        <section className="page-section portfolio" id="dev-courses">
+        <>
+        <div className="anchor" id="dev-courses" />
+        <section className="page-section portfolio">
             <div className="container">
                 <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
                     Dev Courses
@@ -14,6 +16,7 @@ const DevCourses = () => {
                 {courses.map(course => <Course course={course} />)}
             </div>
         </section>
+        </>
     )
 }
 

@@ -3,7 +3,7 @@ import Divider from '../Divider/Divider'
 
 const Header = () => {
     return (
-        <header className="masthead bg-primary text-white text-center">
+        <header className="masthead bg-primary text-white text-center" id="page-top">
             <div className="container d-flex align-items-center flex-column">
             {/* Masthead Avatar Image */}
             <img className="masthead-avatar mb-5" src="img/avatar.png" alt="Avatar" />
@@ -13,7 +13,7 @@ const Header = () => {
             <Divider light />
             {/* Masthead Subheading */}
             <p className="masthead-subheading font-weight-light mb-0">
-                Junior Front-End React Developer
+                Front-End React Developer
             </p>
             </div>
         </header>

@@ -1,8 +1,9 @@
 import React from 'react'
 import Divider from '../Divider/Divider'
+import TechButtons from '../TechButtons/TechButtons'
 
 const PortfolioModal = ({ item }) => {
-    const { id, title, image, description, demo, github } = item
+    const { id, title, image, description, tech, demo, github } = item
     return (
         <div
             className="portfolio-modal modal fade"
@@ -35,12 +36,16 @@ const PortfolioModal = ({ item }) => {
                         <Divider />
                         {/* Portfolio Modal - Image */}
                         <img
-                            className="img-fluid rounded mb-5"
+                            className="img-fluid rounded mb-4"
                             src={image}
                             alt={title}
                         />
                         {/* Portfolio Modal - Text */}
-                        <p className="mb-5">{description}</p>
+                        <p className="mb-4">{description}</p>
+                        <div className="mb-4">
+                            <h4 className="mb-3">Technologies used</h4>
+                                <TechButtons tech={tech} />
+                        </div>
                         <a className="btn btn-info mr-1" href={demo} target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-globe-europe mr-1"></i>
                             Demo
@@ -52,7 +57,7 @@ const PortfolioModal = ({ item }) => {
                          </a>
                         }
                         <br />
-                        <button className="btn btn-primary mt-2" href="#" data-dismiss="modal">
+                        <button className="btn btn-primary mt-3" href="#" data-dismiss="modal">
                             <i className="fas fa-times mr-1" />
                             Close Window
                         </button>

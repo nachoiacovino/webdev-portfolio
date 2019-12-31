@@ -3,7 +3,9 @@ import Divider from '../Divider/Divider'
 
 const Contact = () => {
     return (
-        <section className="page-section" id="contact">
+        <>
+        <div className="anchor" id="contact" />
+        <section className="page-section">
             <div className="container">
             {/* Contact Section Heading */}
             <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
@@ -88,6 +90,7 @@ const Contact = () => {
             </div>
             </div>
         </section>
+        </>
     )
 }
 

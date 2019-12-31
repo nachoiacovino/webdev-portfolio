@@ -1,21 +1,22 @@
 import React from 'react'
 import Divider from '../Divider/Divider'
+import TechButtons from '../TechButtons/TechButtons'
 
 const Skills = () => {
-    const skills = ["React", "React Native", "Redux", "Context API", "JavaScript", "ECMAScript 6+", "jQuery", "JSON", "Node.js", "Express", "HTML5", "CSS3", "Bootstrap 4", "SASS", "REST API", "Git", "Github", "Python 3", "Web Scraping"]
+    const skills = ["React", "React Native", "React Hooks", "Redux", "Context API", "Axios", "Expo CLI", "JavaScript", "ECMAScript 6+", "JSX", "Firebase", "jQuery", "JSON", "Node.js", "Express", "HTML5", "CSS3", "Bootstrap 4", "SASS", "REST API", "Git", "Github", "Python 3", "Web Scraping", "Local Storage"]
     return (
-        <section className="page-section bg-primary text-white mb-0" id="skills">
+        <>
+        <div className="anchor" id="skills" />
+        <section className="page-section bg-primary text-white mb-0">
             <div className="container">
-            {/* About Section Heading */}
-            <h2 className="page-section-heading text-center text-uppercase text-white">
-                Skills
-            </h2>
-            <Divider light />
-            </div>
-            <div className="font-weight-light ml-5 mr-5 text-center">
-                {skills.map(skill => <button disabled className="btn btn-dark mr-2 mb-1">{skill}</button>)}
+                <h2 className="page-section-heading text-center text-uppercase text-white">
+                    Skills
+                </h2>
+                <Divider light />
+                <TechButtons tech={skills} />
             </div>
         </section>
+        </>
     )
 }
 

@@ -10964,3 +10964,14 @@ form .row:first-child .floating-label-form-group {
 .copyright {
     background-color: #1a252f;
 }
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+
+    @media screen and (max-width: 650px) {
+        top: -74px;
+    }
+}

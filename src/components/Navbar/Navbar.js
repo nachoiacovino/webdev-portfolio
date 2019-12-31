@@ -1,12 +1,16 @@
 import React from 'react'
 
 const Navbar = () => {
+    const handleNavbarClose = _ => {
+        if (document.querySelector('[aria-expanded="false"]') === null) document.querySelector('.navbar-toggler-right').click()
+    }
+
     return (
         <nav
         className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
         id="mainNav">
             <div className="container">
-            <a className="navbar-brand js-scroll-trigger" href="#page-top">
+            <a onClick={handleNavbarClose} className="navbar-brand js-scroll-trigger" href="#page-top">
                 Ignacio Iacovino
             </a>
             <button
@@ -18,33 +22,32 @@ const Navbar = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
-                
                 <i className="fas fa-bars" />
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto">
                 <li className="nav-item mx-0 mx-lg-1">
-                    <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">
+                    <a onClick={handleNavbarClose} className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">
                         Portfolio
                     </a>
                 </li>
                 <li className="nav-item mx-0 mx-lg-1">
-                    <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">
+                    <a onClick={handleNavbarClose} className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">
                         About
                     </a>
                 </li>
                 <li className="nav-item mx-0 mx-lg-1">
-                    <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#dev-courses">
+                    <a onClick={handleNavbarClose} className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#dev-courses">
                         Dev Courses
                     </a>
                 </li>
                 <li className="nav-item mx-0 mx-lg-1">
-                    <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">
+                    <a onClick={handleNavbarClose} className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">
                         Skills
                     </a>
                 </li>
                 <li className="nav-item mx-0 mx-lg-1">
-                    <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">
+                    <a onClick={handleNavbarClose} className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">
                         Contact
                     </a>
                 </li>
