@@ -1,0 +1,53 @@
+.btn {
+    font-weight: 700;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+}
+
+section#contactStyles .section-heading {
+    color: #fff;
+}
+
+section#contactStyles .form-group {
+    margin-bottom: 25px;
+}
+
+section#contactStyles .form-group input,
+section#contactStyles .form-group textarea {
+    padding: 20px;
+}
+
+section#contactStyles .form-group input.form-control {
+    height: auto;
+}
+
+section#contactStyles .form-group textarea.form-control {
+    height: 248px;
+}
+
+section#contactStyles .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+section#contactStyles ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+}
+
+section#contactStyles :-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+}
+
+section#contactStyles ::-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+}
+
+section#contactStyles :-ms-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+}

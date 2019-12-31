@@ -1,93 +1,120 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Contact.scss'
 import Divider from '../Divider/Divider'
+import useInputState from '../../hooks/useInputState'
 
 const Contact = () => {
+    const [status, setStatus] = useState("")
+    const [name, setName, resetName] = useInputState("")
+    const [email, setEmail, resetEmail] = useInputState("")
+    const [phone, setPhone, resetPhone] = useInputState("")
+    const [message, setMessage, resetMessage] = useInputState("")
+
+    const submitForm = e => {
+        e.preventDefault()
+        const form = e.target
+        const data = new FormData(form)
+        const xhr = new XMLHttpRequest()
+        xhr.open(form.method, form.action)
+        xhr.setRequestHeader("Accept", "application/json")
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return
+          if (xhr.status === 200) {
+            form.reset()
+            resetName()
+            resetEmail()
+            resetPhone()
+            resetMessage()
+            setStatus("SUCCESS")
+          } else {
+            setStatus("ERROR")
+          }
+        }
+        xhr.send(data)
+    }
+
+    // success: function() {
+    //     // Success message
+    //     $('#success').html("<div class='alert alert-success'>");
+    //     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+    //       .append("</button>");
+    //     $('#success > .alert-success')
+    //       .append("<strong>Your message has been sent. </strong>");
+    //     $('#success > .alert-success')
+    //       .append('</div>');
+    //     //clear all fields
+    //     $('#contactForm').trigger("reset");
+    //   },
+    //   error: function() {
+    //     // Fail message
+    //     $('#success').html("<div class='alert alert-danger'>");
+    //     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+    //       .append("</button>");
+    //     $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+    //     $('#success > .alert-danger').append('</div>');
+    //     //clear all fields
+    //     $('#contactForm').trigger("reset");
+
     return (
         <>
         <div className="anchor" id="contact" />
-        <section className="page-section">
+        <section className="page-section" id="contactStyles">
             <div className="container">
-            {/* Contact Section Heading */}
-            <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
-                Contact Me
-            </h2>
-            <Divider />
-            {/* Contact Section Form */}
-            <div className="row">
-                <div className="col-lg-8 mx-auto">
-                {/* To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. */}
-                <form name="sentMessage" id="contactForm" noValidate="novalidate">
-                    <div className="control-group">
-                    <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Name</label>
-                        <input
-                        className="form-control"
-                        id="name"
-                        type="text"
-                        placeholder="Name"
-                        required="required"
-                        data-validation-required-message="Please enter your name."
-                        />
-                        <p className="help-block text-danger" />
+                {/* Contact Section Heading */}
+                <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
+                    Contact Me
+                </h2>
+                <Divider />
+                {/* Contact Section Form */}
+                <div className="row">
+                    <div className="col-lg-8 mx-auto">
+                    <form onSubmit={submitForm} action="https://formspree.io/xzbdyzez" method="POST" id="contactForm" name="sentMessage">
+                            <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                <input class="form-control" id="name" name="name" value={name} onChange={setName} type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                <input class="form-control" id="email" name="email" value={email} onChange={setEmail} type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
+                                <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                <input class="form-control" id="phone" name="phone" value={phone} onChange={setPhone} type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" value={message} onChange={setMessage} placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                {/* <div id="success"></div> */}
+                                
+                            {status === "SUCCESS" 
+                            ?   <div class='alert alert-success'>
+                                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                                    <strong>Your message has been sent. </strong>
+                                </div>
+                            :   <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                            }
+                            {status === "ERROR" && 
+                                <div class='alert alert-danger mt-3'>
+                                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                                    <strong>Sorry {name}, it seems that my mail server is not responding. Please try again later!</strong>
+                                </div>
+                            }
+
+
+
+                            </div>
+                            </div>
+                        </form>
                     </div>
-                    </div>
-                    <div className="control-group">
-                    <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Email Address</label>
-                        <input
-                        className="form-control"
-                        id="email"
-                        type="email"
-                        placeholder="Email Address"
-                        required="required"
-                        data-validation-required-message="Please enter your email address."
-                        />
-                        <p className="help-block text-danger" />
-                    </div>
-                    </div>
-                    <div className="control-group">
-                    <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Phone Number</label>
-                        <input
-                        className="form-control"
-                        id="phone"
-                        type="tel"
-                        placeholder="Phone Number"
-                        required="required"
-                        data-validation-required-message="Please enter your phone number."
-                        />
-                        <p className="help-block text-danger" />
-                    </div>
-                    </div>
-                    <div className="control-group">
-                    <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Message</label>
-                        <textarea
-                        className="form-control"
-                        id="message"
-                        rows={5}
-                        placeholder="Message"
-                        required="required"
-                        data-validation-required-message="Please enter a message."
-                        defaultValue={""}
-                        />
-                        <p className="help-block text-danger" />
-                    </div>
-                    </div>
-                    <br />
-                    <div id="success" />
-                    <div className="form-group">
-                    <button
-                        type="submit"
-                        className="btn btn-primary btn-xl"
-                        id="sendMessageButton"
-                    >
-                        Send
-                    </button>
-                    </div>
-                </form>
                 </div>
-            </div>
             </div>
         </section>
         </>
