@@ -14,7 +14,7 @@ const PortfolioItem = ({ item }) => {
                     <i className="fas fa-plus fa-3x" />
                 </div>
                 </div>
-                <img className="img-fluid" src={thumbnail} alt={title} />
+                <img className="img-fluid" src={thumbnail} alt={title} height={244} width={488} />
             </div>
         </div>
     )
