@@ -29,7 +29,7 @@ const About = () => {
             <div className="text-center mt-4">
                 <a
                 className="btn btn-xl btn-outline-light"
-                href="/files/IgnacioNicolasIacovinoResume.pdf"
+                href="/files/IgnacioIacovinoResume.pdf"
                 target="_blank" 
                 rel="noopener noreferrer"
                 >
