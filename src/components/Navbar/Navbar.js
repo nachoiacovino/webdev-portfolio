@@ -1,7 +1,6 @@
 import React from 'react'
-import './Navbar.scss'
-import $ from 'jquery';
-window.$ = $;
+import $ from 'jquery'
+window.$ = $
 
 const Navbar = () => {
     const handleNavbarClose = _ => {
