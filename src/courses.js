@@ -1,5 +1,13 @@
 export default [
     {
+        title: "The Ultimate MySQL Bootcamp",
+        description: "20 hours. Complete SQL and MySQL course in which I reinforced my SQL knowledge and learned a lot of new queries across multiple tables. I also learned how to integrate Node.js with Express with MySQL.",
+        teacher: "Colt Steele",
+        company: "Udemy",
+        url: "https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/",
+        date: "Finished on Jan 2020"
+    },
+    {
         title: "The Modern React Bootcamp (Hooks, Context, NextJS, Router)",
         description: "39 hours. Complete React Course in which I reinforced my React knowledge and learned Context API, React Router, NextJS and React optimization among other things and mastered React Hooks.",
         teacher: "Colt Steele",
