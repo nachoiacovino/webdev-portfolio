@@ -33,28 +33,6 @@ const Contact = () => {
         xhr.send(data)
     }
 
-    // success: function() {
-    //     // Success message
-    //     $('#success').html("<div class='alert alert-success'>");
-    //     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-    //       .append("</button>");
-    //     $('#success > .alert-success')
-    //       .append("<strong>Your message has been sent. </strong>");
-    //     $('#success > .alert-success')
-    //       .append('</div>');
-    //     //clear all fields
-    //     $('#contactForm').trigger("reset");
-    //   },
-    //   error: function() {
-    //     // Fail message
-    //     $('#success').html("<div class='alert alert-danger'>");
-    //     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-    //       .append("</button>");
-    //     $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
-    //     $('#success > .alert-danger').append('</div>');
-    //     //clear all fields
-    //     $('#contactForm').trigger("reset");
-
     return (
         <>
         <div className="anchor" id="contact" />
@@ -72,20 +50,24 @@ const Contact = () => {
                             <div className="row">
                             <div className="col-md-6">
                                 <div className="form-group">
+                                <label htmlFor="name" className="form-hidden" />
                                 <input className="form-control" id="name" name="name" value={name} onChange={setName} type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
                                 <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="form-group">
+                                <label htmlFor="email" className="form-hidden" />
                                 <input className="form-control" id="email" name="email" value={email} onChange={setEmail} type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
                                 <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="form-group">
+                                <label htmlFor="phone" className="form-hidden" />
                                 <input className="form-control" id="phone" name="phone" value={phone} onChange={setPhone} type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
                                 <p className="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-group">
+                                <label htmlFor="message" className="form-hidden" />
                                 <textarea className="form-control" id="message" name="message" value={message} onChange={setMessage} placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
                                 <p className="help-block text-danger"></p>
                                 </div>

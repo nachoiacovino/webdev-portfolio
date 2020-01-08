@@ -1,5 +1,6 @@
 import React from 'react'
 import Divider from '../Divider/Divider'
+import { ReactComponent as Download } from '../../svg/download.svg'
 
 const About = () => {
     return (
@@ -33,7 +34,8 @@ const About = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 >
-                <i className="fas fa-download mr-2"/>
+                {/* <i className="fas fa-download mr-2"/> */}
+                <Download className="icon-white icon-download" />
                 Download my CV / Resumee
                 </a>
             </div>

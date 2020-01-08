@@ -10975,3 +10975,20 @@ form .row:first-child .floating-label-form-group {
         top: -73px;
     }
 }
+
+.form-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.icon-white {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(87deg) brightness(107%) contrast(102%);
+}
+
+.icon-download {
+    margin-right: 6px;
+}

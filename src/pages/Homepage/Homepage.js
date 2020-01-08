@@ -6,7 +6,6 @@ import Portfolio from '../../components/Portfolio/Portfolio'
 import About from '../../components/About/About'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
-import Copyright from '../../components/Copyright/Copyright'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
 import PortfolioModal from '../../components/PortfolioModal/PortfolioModal'
 import portfolio from '../../portfolio'
@@ -24,7 +23,6 @@ const Homepage = () => {
             <Skills />
             <Contact />
             <Footer />
-            <Copyright />
             <ScrollToTop />
             {portfolio.map(item => <PortfolioModal key={item.title} item={item} />)}
         </>
