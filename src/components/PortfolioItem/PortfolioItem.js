@@ -1,4 +1,5 @@
 import React from 'react'
+import { ReactComponent as Plus } from '../../svg/plus.svg'
 
 const PortfolioItem = ({ item }) => {
     const { id, thumbnail, title } = item
@@ -11,7 +12,7 @@ const PortfolioItem = ({ item }) => {
             >
                 <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                 <div className="portfolio-item-caption-content text-center text-white">
-                    <i className="fas fa-plus fa-3x" />
+                    <Plus className="icon-white" />
                 </div>
                 </div>
                 <img className="img-fluid" src={thumbnail} alt={title} height={244} width={488} />

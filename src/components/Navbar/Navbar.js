@@ -1,4 +1,5 @@
 import React from 'react'
+import { ReactComponent as Bars } from '../../svg/bars.svg'
 import $ from 'jquery'
 window.$ = $
 
@@ -32,7 +33,7 @@ const Navbar = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
-                <i className="fas fa-bars" />
+                <Bars className="icon-white" />
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto">

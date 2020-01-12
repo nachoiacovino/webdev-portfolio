@@ -1,6 +1,10 @@
 import React from 'react'
 import Divider from '../Divider/Divider'
 import TechButtons from '../TechButtons/TechButtons'
+import { ReactComponent as Close } from '../../svg/close.svg'
+import { ReactComponent as MiniClose } from '../../svg/mini-close.svg'
+import { ReactComponent as Globe } from '../../svg/globe.svg'
+import { ReactComponent as Github } from '../../svg/github.svg'
 
 const PortfolioModal = ({ item }) => {
     const { id, title, image, description, tech, demo, github } = item
@@ -22,7 +26,7 @@ const PortfolioModal = ({ item }) => {
                 aria-label="Close"
                 >
                 <span aria-hidden="true">
-                    <i className="fas fa-times" />
+                    <Close className="icon-green mb-2" />
                 </span>
                 </button>
                 <div className="modal-body text-center">
@@ -47,18 +51,18 @@ const PortfolioModal = ({ item }) => {
                                 <TechButtons tech={tech} />
                         </div>
                         <a className="btn btn-info mr-1" href={demo} target="_blank" rel="noopener noreferrer">
-                            <i className="fas fa-globe-europe mr-1"></i>
+                            <Globe className="icon-white icon-button pb-1" />
                             Demo
                         </a>
                         {github && 
                              <a className="btn btn-dark ml-1" href={github} target="_blank" rel="noopener noreferrer">
-                             <i className="fab fa-github mr-1"></i>
+                            <Github className="icon-white icon-button pb-1" />
                              View on Github
                          </a>
                         }
                         <br />
                         <button className="btn btn-primary mt-3" href="#" data-dismiss="modal">
-                            <i className="fas fa-times mr-1" />
+                            <MiniClose className="icon-white icon-button pb-1" />
                             Close Window
                         </button>
                     </div>

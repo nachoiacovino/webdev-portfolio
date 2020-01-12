@@ -1,5 +1,7 @@
 import React from 'react'
 import Copyright from '../Copyright/Copyright'
+import { ReactComponent as Github } from '../../svg/github.svg'
+import { ReactComponent as LinkedIn } from '../../svg/linkedin.svg'
 
 const Footer = () => {
     return (
@@ -18,10 +20,10 @@ const Footer = () => {
                 <div className="col-lg-6 mb-5 mb-lg-0">
                 <h4 className="text-uppercase mb-4">Around the Web</h4>
                 <a className="btn btn-outline-light btn-social mx-1" aria-label="Github" href="https://github.com/naknekv" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-fw fa-github" />
+                    <Github className="icon-white" />
                 </a>
                 <a className="btn btn-outline-light btn-social mx-1" aria-label="LinkedIn" href="https://www.linkedin.com/in/ignacio-iacovino/" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-fw fa-linkedin-in" />
+                    <LinkedIn className="icon-white" />
                 </a>
                 </div>
             </div>

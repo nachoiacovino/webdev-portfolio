@@ -29,13 +29,12 @@ const About = () => {
             {/* About Section Button */}
             <div className="text-center mt-4">
                 <a
-                className="btn btn-xl btn-outline-light"
+                className="btn btn-xl btn-outline-light btn-download"
                 href="/files/IgnacioIacovinoResume.pdf"
                 target="_blank" 
                 rel="noopener noreferrer"
                 >
-                {/* <i className="fas fa-download mr-2"/> */}
-                <Download className="icon-white icon-download" />
+                    <Download className="icon-white icon-download" />
                 Download my CV / Resumee
                 </a>
             </div>

@@ -50,25 +50,22 @@ const Contact = () => {
                             <div className="row">
                             <div className="col-md-6">
                                 <div className="form-group">
-                                <label htmlFor="name" className="form-hidden">Name</label>
-                                <input className="form-control" id="name" name="name" value={name} onChange={setName} type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <input className="form-control" id="name" name="name" value={name} onChange={setName} type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." aria-label="Name"/>
                                 <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="form-group">
-                                <label htmlFor="email" className="form-hidden">Email</label>
-                                <input className="form-control" id="email" name="email" value={email} onChange={setEmail} type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
+                                <input className="form-control" id="email" name="email" value={email} onChange={setEmail} type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." aria-label="Email"/>
                                 <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="form-group">
                                 <label htmlFor="phone" className="form-hidden">Phone</label>
-                                <input className="form-control" id="phone" name="phone" value={phone} onChange={setPhone} type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                <input className="form-control" id="phone" name="phone" value={phone} onChange={setPhone} type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." aria-label="Phone"/>
                                 <p className="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-group">
-                                <label htmlFor="message" className="form-hidden">Message</label>
-                                <textarea className="form-control" id="message" name="message" value={message} onChange={setMessage} placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea className="form-control" id="message" name="message" value={message} onChange={setMessage} placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message." aria-label="Message"></textarea>
                                 <p className="help-block text-danger"></p>
                                 </div>
                             </div>
