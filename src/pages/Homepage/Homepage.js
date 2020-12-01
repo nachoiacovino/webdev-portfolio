@@ -1,16 +1,18 @@
-import React from "react";
-import "./Homepage.scss";
-import Navbar from "../../components/Navbar/Navbar";
-import Header from "../../components/Header/Header";
-import Portfolio from "../../components/Portfolio/Portfolio";
-import About from "../../components/About/About";
-import Contact from "../../components/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
-import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
-import PortfolioModal from "../../components/PortfolioModal/PortfolioModal";
-import portfolio from "../../portfolio";
-import DevCourses from "../../components/DevCourses/DevCourses";
-import Skills from "../../components/Skills/Skills";
+import './Homepage.scss';
+
+import React from 'react';
+
+import About from '../../components/About/About';
+import Contact from '../../components/Contact/Contact';
+import DevCourses from '../../components/DevCourses/DevCourses';
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
+import Navbar from '../../components/Navbar/Navbar';
+import Portfolio from '../../components/Portfolio/Portfolio';
+import PortfolioModal from '../../components/PortfolioModal/PortfolioModal';
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
+import Skills from '../../components/Skills/Skills';
+import portfolio from '../../portfolio';
 
 const Homepage = () => {
   return (

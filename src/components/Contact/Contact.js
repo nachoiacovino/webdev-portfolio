@@ -1,14 +1,16 @@
-import React, { useState } from "react";
-import "./Contact.scss";
-import Divider from "../Divider/Divider";
-import useInputState from "../../hooks/useInputState";
+import './Contact.scss';
+
+import React, { useState } from 'react';
+
+import useInputState from '../../hooks/useInputState';
+import Divider from '../Divider/Divider';
 
 const Contact = () => {
-  const [status, setStatus] = useState("");
-  const [name, setName, resetName] = useInputState("");
-  const [email, setEmail, resetEmail] = useInputState("");
-  const [phone, setPhone, resetPhone] = useInputState("");
-  const [message, setMessage, resetMessage] = useInputState("");
+  const [status, setStatus] = useState('');
+  const [name, setName, resetName] = useInputState('');
+  const [email, setEmail, resetEmail] = useInputState('');
+  const [phone, setPhone, resetPhone] = useInputState('');
+  const [message, setMessage, resetMessage] = useInputState('');
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -16,7 +18,7 @@ const Contact = () => {
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
@@ -25,9 +27,9 @@ const Contact = () => {
         resetEmail();
         resetPhone();
         resetMessage();
-        setStatus("SUCCESS");
+        setStatus('SUCCESS');
       } else {
-        setStatus("ERROR");
+        setStatus('ERROR');
       }
     };
     xhr.send(data);
@@ -35,102 +37,102 @@ const Contact = () => {
 
   return (
     <>
-      <div className="anchor" id="contact" />
-      <section className="page-section" id="contactStyles">
-        <div className="container">
+      <div className='anchor' id='contact' />
+      <section className='page-section' id='contactStyles'>
+        <div className='container'>
           {/* Contact Section Heading */}
-          <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
+          <h2 className='page-section-heading text-center text-uppercase text-secondary mb-0'>
             Contact Me
           </h2>
           <Divider />
           {/* Contact Section Form */}
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
+          <div className='row'>
+            <div className='col-lg-8 mx-auto'>
               <form
                 onSubmit={submitForm}
-                action="https://formspree.io/xzbdyzez"
-                method="POST"
-                id="contactForm"
-                name="sentMessage"
+                action='https://formspree.io/xzbdyzez'
+                method='POST'
+                id='contactForm'
+                name='sentMessage'
               >
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
+                <div className='row'>
+                  <div className='col-md-6'>
+                    <div className='form-group'>
                       <input
-                        className="form-control"
-                        id="name"
-                        name="name"
+                        className='form-control'
+                        id='name'
+                        name='name'
                         value={name}
                         onChange={setName}
-                        type="text"
-                        placeholder="Your Name *"
-                        required="required"
-                        data-validation-required-message="Please enter your name."
-                        aria-label="Name"
+                        type='text'
+                        placeholder='Your Name *'
+                        required='required'
+                        data-validation-required-message='Please enter your name.'
+                        aria-label='Name'
                       />
-                      <p className="help-block text-danger"></p>
+                      <p className='help-block text-danger'></p>
                     </div>
-                    <div className="form-group">
+                    <div className='form-group'>
                       <input
-                        className="form-control"
-                        id="email"
-                        name="email"
+                        className='form-control'
+                        id='email'
+                        name='email'
                         value={email}
                         onChange={setEmail}
-                        type="email"
-                        placeholder="Your Email *"
+                        type='email'
+                        placeholder='Your Email *'
                         required
-                        data-validation-required-message="Please enter your email address."
-                        aria-label="Email"
+                        data-validation-required-message='Please enter your email address.'
+                        aria-label='Email'
                       />
-                      <p className="help-block text-danger"></p>
+                      <p className='help-block text-danger'></p>
                     </div>
-                    <div className="form-group">
-                      <label htmlFor="phone" className="form-hidden">
+                    <div className='form-group'>
+                      <label htmlFor='phone' className='form-hidden'>
                         Phone
                       </label>
                       <input
-                        className="form-control"
-                        id="phone"
-                        name="phone"
+                        className='form-control'
+                        id='phone'
+                        name='phone'
                         value={phone}
                         onChange={setPhone}
-                        type="tel"
-                        placeholder="Your Phone *"
-                        required="required"
-                        data-validation-required-message="Please enter your phone number."
-                        aria-label="Phone"
+                        type='tel'
+                        placeholder='Your Phone *'
+                        required='required'
+                        data-validation-required-message='Please enter your phone number.'
+                        aria-label='Phone'
                       />
-                      <p className="help-block text-danger"></p>
+                      <p className='help-block text-danger'></p>
                     </div>
                   </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
+                  <div className='col-md-6'>
+                    <div className='form-group'>
                       <textarea
-                        className="form-control"
-                        id="message"
-                        name="message"
+                        className='form-control'
+                        id='message'
+                        name='message'
                         value={message}
                         onChange={setMessage}
-                        placeholder="Your Message *"
-                        required="required"
-                        data-validation-required-message="Please enter a message."
-                        aria-label="Message"
+                        placeholder='Your Message *'
+                        required='required'
+                        data-validation-required-message='Please enter a message.'
+                        aria-label='Message'
                       ></textarea>
-                      <p className="help-block text-danger"></p>
+                      <p className='help-block text-danger'></p>
                     </div>
                   </div>
-                  <div className="clearfix"></div>
-                  <div className="col-lg-12 text-center">
+                  <div className='clearfix'></div>
+                  <div className='col-lg-12 text-center'>
                     {/* <div id="success"></div> */}
 
-                    {status === "SUCCESS" ? (
-                      <div className="alert alert-success">
+                    {status === 'SUCCESS' ? (
+                      <div className='alert alert-success'>
                         <button
-                          type="button"
-                          className="close"
-                          data-dismiss="alert"
-                          aria-hidden="true"
+                          type='button'
+                          className='close'
+                          data-dismiss='alert'
+                          aria-hidden='true'
                         >
                           &times;
                         </button>
@@ -138,20 +140,20 @@ const Contact = () => {
                       </div>
                     ) : (
                       <button
-                        id="sendMessageButton"
-                        className="btn btn-primary btn-xl text-uppercase"
-                        type="submit"
+                        id='sendMessageButton'
+                        className='btn btn-primary btn-xl text-uppercase'
+                        type='submit'
                       >
                         Send Message
                       </button>
                     )}
-                    {status === "ERROR" && (
-                      <div className="alert alert-danger mt-3">
+                    {status === 'ERROR' && (
+                      <div className='alert alert-danger mt-3'>
                         <button
-                          type="button"
-                          className="close"
-                          data-dismiss="alert"
-                          aria-hidden="true"
+                          type='button'
+                          className='close'
+                          data-dismiss='alert'
+                          aria-hidden='true'
                         >
                           &times;
                         </button>
