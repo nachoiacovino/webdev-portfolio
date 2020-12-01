@@ -1,23 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import { ReactComponent as Download } from "../../svg/download.svg";
-import Divider from "../Divider/Divider";
+import { ReactComponent as Download } from '../../svg/download.svg';
+import Divider from '../Divider/Divider';
 
 const About = () => {
   return (
     <>
-      <div className="anchor" id="about" />
-      <section className="page-section bg-primary text-white mb-0">
-        <div className="container">
+      <div className='anchor' id='about' />
+      <section className='page-section bg-primary text-white mb-0'>
+        <div className='container'>
           {/* About Section Heading */}
-          <h2 className="page-section-heading text-center text-uppercase text-white">
+          <h2 className='page-section-heading text-center text-uppercase text-white'>
             About
           </h2>
           <Divider light />
           {/* About Section Content */}
-          <div className="row">
-            <div className="col-lg-4 ml-auto">
-              <p className="lead">
+          <div className='row'>
+            <div className='col-lg-4 ml-auto'>
+              <p className='lead'>
                 Hi! My name is Ignacio but everyone calls me Nacho, my favorite
                 languages are JavaScript and Python, but I have worked mostly in
                 JavaScript with React. I'm looking for opportunities to keep
@@ -25,26 +25,24 @@ const About = () => {
                 evolving in this fast-changing tech world that we live in.
               </p>
             </div>
-            <div className="col-lg-4 mr-auto">
-              <p className="lead">
-                My strengths lie in JavaScript (Both ES5 and ES6+) and
-                especially in React, I've been working in React projects for the
-                last months, both with classes and with hooks, I have worked
-                with RESTFUL APIs, React Routes, and I have use some other
-                libraries. I also have experience in HTML5, CSS3, Bootstrap 4
-                and Backend with Node.js and Express.
+            <div className='col-lg-4 mr-auto'>
+              <p className='lead'>
+                I'm a very fast learner when something interest me, and I'm very
+                resourceful on finding the best tools to learn it, I have learn
+                music this way, and I learned a lot of programming concepts just
+                by researching and trying new stuff and new online courses.
               </p>
             </div>
           </div>
           {/* About Section Button */}
-          <div className="text-center mt-4">
+          <div className='text-center mt-4'>
             <a
-              className="btn btn-xl btn-outline-light btn-download"
-              href="/files/IgnacioIacovinoResume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              className='btn btn-xl btn-outline-light btn-download'
+              href='/files/IgnacioIacovinoResume.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              <Download className="icon-white icon-download" />
+              <Download className='icon-white icon-download' />
               Download my CV / Resume
             </a>
           </div>
