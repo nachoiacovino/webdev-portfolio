@@ -88,9 +88,6 @@ const Contact = () => {
                       <p className='help-block text-danger'></p>
                     </div>
                     <div className='form-group'>
-                      <label htmlFor='phone' className='form-hidden'>
-                        Phone
-                      </label>
                       <input
                         className='form-control'
                         id='phone'
