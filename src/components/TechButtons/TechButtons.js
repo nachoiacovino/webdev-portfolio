@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TechButtons = ({ tech }) => {
   return (
     <div className='font-weight-light text-center'>

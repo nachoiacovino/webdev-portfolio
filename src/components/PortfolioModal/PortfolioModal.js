@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ReactComponent as Close } from '../../svg/close.svg';
 import { ReactComponent as Github } from '../../svg/github.svg';
 import { ReactComponent as Globe } from '../../svg/globe.svg';

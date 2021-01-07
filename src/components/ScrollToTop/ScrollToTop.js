@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ReactComponent as Arrow } from '../../svg/chevron-circle-up.svg';
 
 const ScrollToTop = () => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ReactComponent as Star } from '../../svg/star.svg';
 
 const Divider = ({ light }) => {

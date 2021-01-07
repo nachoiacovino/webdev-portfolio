@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ReactComponent as Download } from '../../svg/download.svg';
 import Divider from '../Divider/Divider';
 

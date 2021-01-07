@@ -1,7 +1,5 @@
 import './Homepage.scss';
 
-import React from 'react';
-
 import About from '../../components/About/About';
 import Contact from '../../components/Contact/Contact';
 import DevCourses from '../../components/DevCourses/DevCourses';

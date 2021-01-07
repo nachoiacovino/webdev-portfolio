@@ -1,6 +1,6 @@
 import './Contact.scss';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import useInputState from '../../hooks/useInputState';
 import Divider from '../Divider/Divider';

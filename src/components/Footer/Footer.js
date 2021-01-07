@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ReactComponent as Github } from '../../svg/github.svg';
 import { ReactComponent as LinkedIn } from '../../svg/linkedin.svg';
 import Copyright from '../Copyright/Copyright';

@@ -1,12 +1,10 @@
-import React from 'react';
-
 import { ReactComponent as Bars } from '../../svg/bars.svg';
 
 const Navbar = () => {
-     const handleNavbarClose = () => {
+  const handleNavbarClose = () => {
     if (document.querySelector('[aria-expanded="false"]') === null)
       document.querySelector('.navbar-toggler-right').click();
-  }; 
+  };
 
   // TODO: Collapse Navbar when scrolling
 

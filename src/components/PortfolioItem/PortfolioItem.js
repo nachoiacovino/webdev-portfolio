@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ReactComponent as Plus } from '../../svg/plus.svg';
 
 const PortfolioItem = ({ item }) => {

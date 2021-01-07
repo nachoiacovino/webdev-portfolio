@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Course = ({ course }) => {
   const { title, description, teacher, company, url, date } = course;
   return (

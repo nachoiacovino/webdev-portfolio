@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Divider from '../Divider/Divider';
 import TechButtons from '../TechButtons/TechButtons';
 

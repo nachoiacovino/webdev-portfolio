@@ -1,5 +1,3 @@
-import React from 'react';
-
 import portfolio from '../../portfolio';
 import Divider from '../Divider/Divider';
 import PortfolioItem from '../PortfolioItem/PortfolioItem';

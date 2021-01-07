@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Copyright = () => {
   return (
     <section className='copyright py-4 text-center text-white'>

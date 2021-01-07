@@ -1,5 +1,3 @@
-import React from 'react';
-
 import courses from '../../courses';
 import Course from '../Course/Course';
 import Divider from '../Divider/Divider';
