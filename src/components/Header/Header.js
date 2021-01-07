@@ -10,7 +10,7 @@ const Header = () => {
         {/* Masthead Avatar Image */}
         <img
           className='mb-5 masthead-avatar'
-          src='img/avatar.jpg'
+          src='img/avatar.webp'
           alt='Avatar'
           width={240}
           height={240}
