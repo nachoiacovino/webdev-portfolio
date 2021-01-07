@@ -1,4 +1,4 @@
-export default [
+const projects = [
   {
     title: 'hooshen.gg',
     description:
@@ -95,3 +95,5 @@ export default [
     github: 'https://github.com/naknekv/react-lights-out',
   },
 ];
+
+export default projects;
