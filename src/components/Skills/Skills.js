@@ -9,8 +9,14 @@ const Skills = () => {
     'React Native',
     'React Hooks',
     'Redux',
+    'Redux Saga',
+    'Next.js',
+    'Tailwind',
+    'Jest',
+    'Enzyme',
     'Angular',
-    'Typescript',
+    'Ionic',
+    'TypeScript',
     'Context API',
     'Axios',
     'Expo CLI',
@@ -29,6 +35,7 @@ const Skills = () => {
     'REST API',
     'Git',
     'Github',
+    'AWS CodeCommit',
     'Python 3',
     'Web Scraping',
     'Local Storage',
@@ -37,9 +44,9 @@ const Skills = () => {
   return (
     <>
       <div className='anchor' id='skills' />
-      <section className='page-section bg-primary text-white mb-0'>
+      <section className='mb-0 text-white page-section bg-primary'>
         <div className='container'>
-          <h2 className='page-section-heading text-center text-uppercase text-white'>
+          <h2 className='text-center text-white page-section-heading text-uppercase'>
             Skills
           </h2>
           <Divider light />
