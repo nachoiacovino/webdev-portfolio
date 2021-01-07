@@ -1,26 +1,12 @@
-import $ from 'jquery';
 import React from 'react';
 
 import { ReactComponent as Bars } from '../../svg/bars.svg';
 
-window.$ = $;
-
 const Navbar = () => {
-  const handleNavbarClose = (_) => {
+     const handleNavbarClose = () => {
     if (document.querySelector('[aria-expanded="false"]') === null)
       document.querySelector('.navbar-toggler-right').click();
-  };
-
-  $(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate(
-      {
-        scrollTop: $($.attr(this, 'href')).offset().top,
-      },
-      500,
-    );
-  });
+  }; 
 
   // TODO: Collapse Navbar when scrolling
 
@@ -32,13 +18,13 @@ const Navbar = () => {
       <div className='container'>
         <a
           onClick={handleNavbarClose}
-          className='navbar-brand js-scroll-trigger'
+          className='navbar-brand'
           href='#page-top'
         >
           Ignacio Iacovino
         </a>
         <button
-          className='navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded'
+          className='text-white rounded navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary'
           type='button'
           data-toggle='collapse'
           data-target='#navbarResponsive'
@@ -49,47 +35,47 @@ const Navbar = () => {
           <Bars className='icon-white' />
         </button>
         <div className='collapse navbar-collapse' id='navbarResponsive'>
-          <ul className='navbar-nav ml-auto'>
-            <li className='nav-item mx-0 mx-lg-1'>
+          <ul className='ml-auto navbar-nav'>
+            <li className='mx-0 nav-item mx-lg-1'>
               <a
                 onClick={handleNavbarClose}
-                className='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger'
+                className='px-0 py-3 rounded nav-link px-lg-3'
                 href='#portfolio'
               >
                 Portfolio
               </a>
             </li>
-            <li className='nav-item mx-0 mx-lg-1'>
+            <li className='mx-0 nav-item mx-lg-1'>
               <a
                 onClick={handleNavbarClose}
-                className='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger'
+                className='px-0 py-3 rounded nav-link px-lg-3'
                 href='#about'
               >
                 About
               </a>
             </li>
-            <li className='nav-item mx-0 mx-lg-1'>
+            <li className='mx-0 nav-item mx-lg-1'>
               <a
                 onClick={handleNavbarClose}
-                className='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger'
+                className='px-0 py-3 rounded nav-link px-lg-3'
                 href='#dev-courses'
               >
                 Dev Courses
               </a>
             </li>
-            <li className='nav-item mx-0 mx-lg-1'>
+            <li className='mx-0 nav-item mx-lg-1'>
               <a
                 onClick={handleNavbarClose}
-                className='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger'
+                className='px-0 py-3 rounded nav-link px-lg-3'
                 href='#skills'
               >
                 Skills
               </a>
             </li>
-            <li className='nav-item mx-0 mx-lg-1'>
+            <li className='mx-0 nav-item mx-lg-1'>
               <a
                 onClick={handleNavbarClose}
-                className='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger'
+                className='px-0 py-3 rounded nav-link px-lg-3'
                 href='#contact'
               >
                 Contact

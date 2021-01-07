@@ -5,26 +5,26 @@ import Divider from '../Divider/Divider';
 const Header = () => {
   return (
     <header
-      className='masthead bg-primary text-white text-center'
+      className='text-center text-white masthead bg-primary'
       id='page-top'
     >
       <div className='container d-flex align-items-center flex-column'>
         {/* Masthead Avatar Image */}
         <img
-          className='masthead-avatar mb-5'
-          src='img/avatar.png'
+          className='mb-5 masthead-avatar'
+          src='img/avatar.jpg'
           alt='Avatar'
           width={240}
           height={240}
         />
         {/* Masthead Heading */}
-        <h1 className='masthead-heading text-uppercase mb-0'>
+        <h1 className='mb-0 masthead-heading text-uppercase'>
           Ignacio Iacovino
         </h1>
         {/* Icon Divider */}
         <Divider light />
         {/* Masthead Subheading */}
-        <p className='masthead-subheading font-weight-light mb-0'>
+        <p className='mb-0 masthead-subheading font-weight-light'>
           Frontend Developer
         </p>
       </div>
