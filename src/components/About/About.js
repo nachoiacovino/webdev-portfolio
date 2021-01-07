@@ -7,16 +7,16 @@ const About = () => {
   return (
     <>
       <div className='anchor' id='about' />
-      <section className='page-section bg-primary text-white mb-0'>
+      <section className='mb-0 text-white page-section bg-primary'>
         <div className='container'>
           {/* About Section Heading */}
-          <h2 className='page-section-heading text-center text-uppercase text-white'>
+          <h2 className='text-center text-white page-section-heading text-uppercase'>
             About
           </h2>
           <Divider light />
           {/* About Section Content */}
           <div className='row'>
-            <div className='col-lg-4 ml-auto'>
+            <div className='ml-auto col-lg-4'>
               <p className='lead'>
                 Hi! My name is Ignacio but everyone calls me Nacho, my favorite
                 languages are JavaScript and Python, but I have worked mostly in
@@ -25,7 +25,7 @@ const About = () => {
                 evolving in this fast-changing tech world that we live in.
               </p>
             </div>
-            <div className='col-lg-4 mr-auto'>
+            <div className='mr-auto col-lg-4'>
               <p className='lead'>
                 I'm a very fast learner when something interest me, and I'm very
                 resourceful on finding the best tools to learn it, I have learn
@@ -35,10 +35,10 @@ const About = () => {
             </div>
           </div>
           {/* About Section Button */}
-          <div className='text-center mt-4'>
+          <div className='mt-4 text-center'>
             <a
               className='btn btn-xl btn-outline-light btn-download'
-              href='/files/IgnacioIacovinoResume.pdf'
+              href='/files/NachoIacovinoCV.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >
