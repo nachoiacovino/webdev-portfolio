@@ -18,11 +18,11 @@ const About = () => {
           <div className='row'>
             <div className='ml-auto col-lg-4'>
               <p className='lead'>
-                Hi! My name is Ignacio but everyone calls me Nacho, my favorite
-                languages are JavaScript and Python, but I have worked mostly in
-                JavaScript with React. I'm looking for opportunities to keep
-                growing as a developer and I'm excited to keep learning and
-                evolving in this fast-changing tech world that we live in.
+                Hi! A little bit about myself: My favorite languages are
+                JavaScript and Python, I have worked mostly in JavaScript with
+                React and Redux. I love helping other developers improve and get
+                better. I'm passionate about code reusability and best
+                practices.
               </p>
             </div>
             <div className='mr-auto col-lg-4'>
